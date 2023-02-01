@@ -23,8 +23,6 @@ public class LogInPage {
     @FindBy(css=".error-message-container.error")
     public WebElement notification;
 
-
-
     public void insertUsername(String username) {
         this.username.clear();
         this.username.sendKeys(username);
@@ -42,7 +40,5 @@ public class LogInPage {
     public String getNotificationText(){
         return notification.getText();
     }
-
-
 
 }
